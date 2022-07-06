@@ -1,0 +1,70 @@
+html {
+	font-size: 16px;
+	font-family: 'Playfair Display', serif;
+	margin: 24px;
+
+};
+
+h1 {
+	font-size:  2rem;
+	font-weight: bold;
+};
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+};
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: light;
+}
+
+body {
+	max-width:  900px;
+
+}
+
+nav {
+	display:  flex;
+	float: right;
+
+}
+
+ul {
+	list-style-type: none;
+	display: inline-flex;
+}
+
+li {
+
+
+}
+
+ li a {
+	text-decoration: none;
+	padding-right: 1.5rem;
+	font-weight: bold;
+	color: black;
+	font-size: 1.25rem;
+	display: block;
+}
+
+header {
+display: block;
+padding: 1rem;
+position: relative;
+margin: 1rem;
+text-shadow: 1px 1px 2px dimgray;
+}
+
+.about-me-container{
+	display: flex;}
+
+.selfie {
+	width: 300px;
+	flex-shrink: 0;
+	border-radius: 0.5rem;
+	float: left;
+	padding: 1rem;
+}
