@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 	<script type="./script.js"></script>
 	<title>Portfolio</title>
 </head>
@@ -27,7 +27,13 @@
 			<div class="about-me-text-container">
 				<h2>About me</h2>
 				<p>Hi! I’m Beatrise or Bea, a girl from Latvia who lived all around the world, had a few different careers and loves a good adventure. I have now settled in Thailand and decided to try myself out in Front-End engineering. I am still learning to delpoy my projects but I have a few designs that i would like to share.</p>
-				<p>In my spare time I love to go to the gym, play ukulele, learn languages, do scuba diving and play with my dog. Click <button>here</button> if you want to see a photo of her!</p>
+				<p>In my spare time I love to go to the gym, play ukulele, learn languages, do scuba diving and play with my dog. Click <button type="submit" id="button" onclick= "show()">here</button> if you want to see a photo of her!</p>
+				<div class="modal" id="popup">
+					<div class="shiba">
+						<span class="close">&times;</span>
+						<img src="/Users/bea/Desktop/IMG_2010.jpeg">
+					</div>
+				</div>
 			</div>
 			
 		</div>

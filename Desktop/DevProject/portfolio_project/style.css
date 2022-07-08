@@ -1,7 +1,7 @@
 html {
 	font-size: 16px;
-	font-family: 'Playfair Display', serif;
-	margin: 24px;
+	font-family: 'Poppins', sans-serif;
+	margin: 32px;
 
 };
 
@@ -51,20 +51,66 @@ li {
 }
 
 header {
-display: block;
-padding: 1rem;
+display: flex;
 position: relative;
-margin: 1rem;
+margin-left: 2rem;
 text-shadow: 1px 1px 2px dimgray;
 }
 
 .about-me-container{
 	display: flex;}
 
+
+
 .selfie {
 	width: 300px;
 	flex-shrink: 0;
-	border-radius: 0.5rem;
-	float: left;
-	padding: 1rem;
+	border-radius: 8px;
+	
+}
+
+.about-me-text-container {
+	margin: 2rem;
+
+}
+
+button {
+	background-color: orange;
+	color:  white;
+	border:  none;
+	padding: 0.25rem;
+	text-decoration: none;
+}
+
+button:hover { 
+	background: url(/Users/bea/Desktop/4600410.png);
+	background-size: cover;
+	cursor: pointer;
+	boder: none;
+	color: transparent;
+	height: 2.5rem;
+	width: 2.5rem;
+	transition: 200ms;
+}
+
+button:active {
+		background: url(/Users/bea/Desktop/4600410.png);
+	background-size: cover;
+	cursor: pointer;
+	boder: none;
+	color: transparent;
+	height: 2.5rem;
+	width: 2.5rem;
+  	transform: translateY(4px);
+}
+.modal {
+	display:  node;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.3);
 }
