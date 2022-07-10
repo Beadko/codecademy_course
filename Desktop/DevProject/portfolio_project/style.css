@@ -94,7 +94,7 @@ button:hover {
 }
 
 button:active {
-		background: url(/Users/bea/Desktop/4600410.png);
+	background: url(/Users/bea/Desktop/4600410.png);
 	background-size: cover;
 	cursor: pointer;
 	boder: none;
@@ -103,14 +103,43 @@ button:active {
 	width: 2.5rem;
   	transform: translateY(4px);
 }
-.modal {
-	display:  node;
+.contents {
+    width: 40rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0,0,0,0.3);
+	left: 25%;
+	top: 20rem;
+	animation: pop-swirl 2s ease forwards;
+
+}
+
+.popup img {
+	width:  100%;
+}
+.popup { display: none; }
+.popup.open { display: block; 
+	}
+.blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+  }
+
+  @keyframes pop-swirl {
+  0% {
+    transform: scale(0) rotate(360deg);
+  }
+  60% {
+    transform: scale(0.8) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
 }
