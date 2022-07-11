@@ -3,21 +3,22 @@ html {
 	font-family: 'Poppins', sans-serif;
 	margin: 32px;
 
-};
+}
 
 h1 {
 	font-size:  2rem;
 	font-weight: bold;
-};
+}
 
 h2 {
 	font-size: 1.5rem;
 	font-weight: bold;
-};
+}
 
 h3 {
 	font-size: 1.25rem;
-	font-weight: light;
+	font-weight: 400;
+	display:  inline;
 }
 
 body {
@@ -36,10 +37,6 @@ ul {
 	display: inline-flex;
 }
 
-li {
-
-
-}
 
  li a {
 	text-decoration: none;
@@ -57,21 +54,25 @@ margin-left: 2rem;
 text-shadow: 1px 1px 2px dimgray;
 }
 
+section {
+	display: block;
+
+}
+
 .about-me-container{
 	display: flex;}
 
 
 
 .selfie {
-	width: 300px;
+	max-width: 40%;
 	flex-shrink: 0;
-	border-radius: 8px;
-	
+	object-fit: contain;
+	height:  auto;
 }
 
 .about-me-text-container {
 	margin: 2rem;
-
 }
 
 button {
@@ -117,7 +118,10 @@ button:active {
 }
 
 .popup img {
-	width:  100%;
+	max-width: 30rem;
+	height: auto;
+	object-fit: contain;
+	text-align: center;
 }
 .popup { display: none; }
 .popup.open { display: block; 
@@ -142,4 +146,29 @@ button:active {
   100% {
     transform: scale(1) rotate(0deg);
   }
+}
+
+
+details {
+	cursor:  pointer;
+}
+
+
+i {
+padding-right: 1rem;
+}
+
+.contact {
+display:  inline-block;
+padding-top:  4rem;
+margin-left: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+	html {
+		font-size: 12px;	
+	}
+	h1 {
+		margin-top: 4rem;
+	}
 }
